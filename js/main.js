@@ -62,7 +62,9 @@ function CountDownToMario(endTime, divId) {
       if (distance<=0) {
           clearInterval(interval);
           div.textContent="IT'S HERE!";
-  
+
+          document.body.classList.add('launched');
+          document.getElementById('coinSound').play();
           
       }
   
